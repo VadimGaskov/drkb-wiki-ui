@@ -1,0 +1,308 @@
+body {
+    background-image: url(../assets/img/back.png);
+    background-size: 100% 100%; /* Изображение будет масштабироваться, чтобы покрыть весь экран */
+    background-repeat: no-repeat; /* Изображение не будет повторяться */
+    background-attachment: fixed; /* Фон будет фиксированным при прокрутке страницы */
+    background-position: center; /* Изображение будет центрировано */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    margin: 0 4rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+header {
+    display: flex;
+    height: auto;
+    min-height: 200px;
+}
+
+.header-wrappper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.navbar {
+    font-size: 1.3rem;
+    display: flex;
+    color: white;
+    height: 100px;
+}
+
+.navbar > ul {
+    margin-right: 1rem;
+}
+
+#fox-logo {
+    width: 13rem;
+    height: 13rem;
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
+.news-feed {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.top-nav {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 1rem;
+}
+
+.news-item {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+}
+
+.news-preview {
+    height: 90%;
+    overflow-y: auto;
+}
+
+.news-item > button {
+    height: 1.5rem;
+    width: 95%;
+    align-self: center;
+    background-color: #2d4eb1;
+    color: white;
+    border: none;
+    border-radius: 0.1rem;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 7rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+
+.nav-item > img {
+    width: 7.5rem;
+    height: 4.5rem;
+}
+
+.nav-item > span {
+    color: #2D4EB1;
+    font-size: 1.3rem;
+}
+
+
+.news-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-title {
+    color: #2D4EB1;
+    font-weight: 300;
+}
+
+.bottom-nav {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    column-gap: 4rem;
+    margin-top: 4rem;
+}
+
+.bottom-nav-element {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #B7DAf9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-nav-element > img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.bottom-nav-wrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-nav-wrapper > span {
+    color: white;
+    margin-top: 1rem;
+}
+
+.sidedar-nav{
+    background-color: #2D4EB1;
+    height: 100%;
+    width: 4.8rem;
+    top: 0;
+    position: absolute;
+}
+
+.img-nav{
+    width: 4.8rem;
+    height: auto;
+    margin: auto;
+    padding: 0.3rem;
+    
+}
+.sidedar-nav > ul{
+    margin: 0;
+    padding: 0;
+}
+.sidedar-nav > ul > li{
+    margin: 0;
+    padding: 0;
+}
+.sidedar-nav > ul > li > a{
+    width: 4.8rem;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #423185 ;
+}
+.sidedar-nav > ul > li > a:hover{
+    transition: 0.3s;
+    background-color: #87A4E2;
+}
+.sidedar-nav > ul > li > a:hover > .img-nav{
+    transition: 0.3s;
+    background-color: #87A4E2;
+}
+
+.crumbs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 10rem;
+}
+
+.crumbs > a{
+    color : #423185;
+}
+
+.wrapper-name-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-page{
+    line-height: 10px;
+    height: 40px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10rem;
+    color : #423185;
+}
+.name-page > h1{
+    margin-right: 15px;
+}
+
+.equipments{
+    width: 60%;
+    margin-left: 10rem;
+}
+
+.list-equipment{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #EBECEC;
+}
+.list-equipment > ul > li{
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.list-equipment > ul > li:hover{
+    background-color: #C5C6C6;
+}
+
+.list-equipment > ul > li > a{
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.name-equipment{
+    margin-left: 20px;
+}
+.symbol-plus{
+    background-color: #2D4EB1;
+    color: white;
+    font-size: 24px;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 0px 3px 3px 0px;
+}
+.search-input{
+    margin-top: 80px;
+    margin-left: 10rem;
+    width: 20%;
+}
+
+.search-input > input{
+    height: 30px;
+    line-height: 30px;
+    width: 80%;
+    font-size: 24px;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+.equipments > h2{
+    color: #423185;
+}
+
+.search-input > button{
+    margin: 0;
+    height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    width: 30px;
+    border: 0;
+    background: white;
+    padding: 0;
+    position: absolute;
+}
+.search-input > button > img{
+    width: 20px;
+}
